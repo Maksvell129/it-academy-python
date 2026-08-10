@@ -8,7 +8,6 @@
 
 
 def make_rate_limiter(max_requests: int):
-
     def request():
         nonlocal max_requests
         max_requests -= 1
@@ -18,12 +17,11 @@ def make_rate_limiter(max_requests: int):
         else:
             return "Ошибка: Лимит запросов превышен!"
 
-
     return request
 
 
-limiter = make_rate_limiter(max_requests=3)
-print(limiter())
-print(limiter())
-print(limiter())
-print(limiter())
+limiter2 = make_rate_limiter(max_requests=3)
+print(limiter2())
+print(limiter2())
+print(limiter2())
+print(limiter2())

@@ -17,7 +17,7 @@ def retry(func):
         try:
             return func(*args, **kwargs)
         except Exception as e:
-            print(f"«Произошла ошибка [{e}]. Пробуем еще раз...» и сделать вторую (повторную) попытку вызова.")
+            print(f"«Произошла ошибка [{e}]. Пробуем еще раз...» и сделать вторую попытку вызова.")
             return func(*args, **kwargs)
 
     return wrapper
