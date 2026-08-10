@@ -20,7 +20,6 @@ def analyze_scores(scores: list[int | float]) -> (int | float, int | float, int 
         summ += scores[i]
 
 
-    # return min(scores), max(scores), mean(scores)
     return min_score, max_score, summ / len(scores)
 
 
