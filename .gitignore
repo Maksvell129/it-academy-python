@@ -1,0 +1,19 @@
+# Временные файлы Python
+__pycache__/
+*.py[cod]
+
+# Виртуальное окружение
+.venv/
+venv/
+env/
+
+
+# Секреты и переменные
+.env
+
+
+.idea/
+.vscode/
+
+
+.python-version
