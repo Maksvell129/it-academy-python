@@ -10,6 +10,7 @@ def info(name="Aleks", age=10, city="Brest"):
 
 info()
 
+
 def notification(message = "Успешная операция!"):
     print(f"{message=}")
 
