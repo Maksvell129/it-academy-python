@@ -21,3 +21,29 @@ class ExcelWriter(Writer):
     def write(self):
         print("Записать в Excel файл")
 
+
+
+class Reader(ABC):
+    @abstractmethod
+    def read(self):
+        pass
+
+
+class TxtReader(Reader):
+    def read(self):
+        pass
+
+
+class CsvReader(Reader):
+    def read(self):
+        pass
+
+
+class ExcelReader(Reader):
+    def read(self):
+        pass
+
+
+class PdfReader(Reader):
+    def read(self):
+        pass
