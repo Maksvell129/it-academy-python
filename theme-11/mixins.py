@@ -13,6 +13,8 @@ class JsonMixin:
 
 class FileUploadMixin:
     def upload(self):
-        google_disk.upload(self.__dict__)
+        # google_disk.upload(self.__dict__)
+        pass
 
-
+    def delete(self):
+        pass
