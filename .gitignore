@@ -17,3 +17,5 @@ env/
 
 
 .python-version
+
+*.db
