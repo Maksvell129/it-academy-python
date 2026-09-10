@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Юзер:
+{% endblock %}
+
+{% block content %}
+    <h1>{{ user.name }}</h1>
+
+<p>Возраст: {{ user.age }}</p>
+
+{% if user.is_admin %}
+    <p>Администратор</p>
+{% endif %}
+
+<a href="{{ url_for('users.users_all') }}">Назад к списку</a>
+
+
+{% endblock %}
